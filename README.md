@@ -1,2 +1,5 @@
-# DKML
-File repository for ML Features
+# GitHubPractice
+
+Practicing working with github, following along with edX 'AI mlops2x DevOps, DataOps, MLOps' course
+
+[![Python application test with Github Actions](https://github.com/deanak1987/GitHubPractice/actions/workflows/main.yml/badge.svg)](https://github.com/deanak1987/GitHubPractice/actions/workflows/main.yml)
