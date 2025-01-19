@@ -64,7 +64,7 @@ class DataProcessor:
         else:
             results = []
             for _ in range(number):
-                results.append('Heads' if random.random() > 0.5 else 'Tails')
+                results.append("Heads" if random.random() > 0.5 else "Tails")
             return results
 
     def log_operation(self, operation_name: str, status: str = "success") -> None:
@@ -96,7 +96,7 @@ def example_usage():
     print(f"Coin flip Results: {flip_results}")
 
     # Example 4: Logging
-    print('\nLogging operation.')
+    print("\nLogging operation.")
     processor.log_operation("data_analysis")
 
 
