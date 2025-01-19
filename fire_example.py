@@ -90,7 +90,12 @@ def example_usage():
     max_result = processor.analyze_numbers(numbers, "max")
     print(f"Number Analysis Results:\nMean: {mean_result}\nMax: {max_result}")
 
-    # Example 3: Logging
+    # Example 3: Coin flipping
+    flips = 5
+    flip_results = processor.flip_coins(flips)
+    print(f"Coin flip Results: {flip_results}")
+
+    # Example 4: Logging
     print('\nLogging operation.')
     processor.log_operation("data_analysis")
 

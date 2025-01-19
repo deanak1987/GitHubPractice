@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ebcc33-7b1b-424c-9b5d-a78d93f07a7b" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/fire_example.py" afterDir="false" />
-    </list>
+    <list default="true" id="64ebcc33-7b1b-424c-9b5d-a78d93f07a7b" name="Changes" comment="Added coin flipping" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,12 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737312101252</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added coin flipping">
+      <option name="closed" value="true" />
+      <created>1737313358724</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737313358724</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Added coin flipping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added coin flipping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
