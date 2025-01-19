@@ -9,7 +9,9 @@ class DataProcessor:
     def __init__(self, data_dir: str = "./data"):
         self.data_dir = data_dir
 
-    def process_text(self, text: str, uppercase: bool = False, reverse: bool = False) -> str:
+    def process_text(
+        self, text: str, uppercase: bool = False, reverse: bool = False
+    ) -> str:
         """Process a text string with various operations.
 
         Args:
@@ -38,18 +40,22 @@ class DataProcessor:
             "mean": lambda x: sum(x) / len(x),
             "sum": sum,
             "max": max,
-            "min": min
+            "min": min,
         }
 
         if operation not in operations:
-            raise ValueError(f"Unknown operation. Choose from: {', '.join(operations.keys())}")
+            raise ValueError(
+                f"Unknown operation. Choose from: {', '.join(operations.keys())}"
+            )
 
         return operations[operation](numbers)
 
     def log_operation(self, operation_name: str, status: str = "success") -> None:
         """Log an operation with timestamp."""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"[{timestamp}] Operation '{operation_name}' completed with status: {status}")
+        print(
+            f"[{timestamp}] Operation '{operation_name}' completed with status: {status}"
+        )
 
 
 def example_usage():
@@ -57,9 +63,7 @@ def example_usage():
 
     # Example 1: Text processing
     text_result = processor.process_text(
-        "Hello, Python Fire!",
-        uppercase=True,
-        reverse=True
+        "Hello, Python Fire!", uppercase=True, reverse=True
     )
     print("Text Processing Result:", text_result)
 
@@ -70,12 +74,12 @@ def example_usage():
     print(f"Number Analysis Results:\nMean: {mean_result}\nMax: {max_result}")
 
     # Example 3: Logging
-    print('\nLogging operation.')
+    print("\nLogging operation.")
     processor.log_operation("data_analysis")
 
 
 if __name__ == "__main__":
-    print('Demo of Python Fire')
+    print("Demo of Python Fire")
     fire.Fire(DataProcessor)
-    print('\nDemo of program in action.')
+    print("\nDemo of program in action.")
     example_usage()
