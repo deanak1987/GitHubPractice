@@ -1,3 +1,5 @@
+import random
+
 import fire
 from typing import List, Optional
 from datetime import datetime
@@ -50,6 +52,21 @@ class DataProcessor:
 
         return operations[operation](numbers)
 
+    def flip_coins(self, number) -> Optional[list[str]]:
+        """Perform a number of coin flips and return results.
+
+        Args:
+            number: Number of times to flip coin
+        """
+
+        if number < 1:
+            return None
+        else:
+            results = []
+            for _ in range(number):
+                results.append('Heads' if random.random() > 0.5 else 'Tails')
+            return results
+
     def log_operation(self, operation_name: str, status: str = "success") -> None:
         """Log an operation with timestamp."""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -74,7 +91,7 @@ def example_usage():
     print(f"Number Analysis Results:\nMean: {mean_result}\nMax: {max_result}")
 
     # Example 3: Logging
-    print("\nLogging operation.")
+    print('\nLogging operation.')
     processor.log_operation("data_analysis")
 
 
